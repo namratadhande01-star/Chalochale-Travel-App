@@ -40,7 +40,68 @@
         </div>
     </div>
 
-   
+    <!-- Hero Section Start -->
+    <section class="py-5 text-center bg-light">
+        <div class="container">
+            <h1 class="fw-bold">Travel Booking Form</h1>
+            <p class="lead">Fill the form and submit your travel request</p>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- form start -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-8">
+                    <div class="card shadow-lg p-4 rounded-4">
+                        <h3 class="text-center mb-4 fw-bold">
+                            Book your trip
+                        </h3>
+                        <form id="bookingForm">
+                            <div class="row">
+                                <div class="col-12 col-md-6 mb-3">
+                                    <label for="name" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="name"
+                                        placeholder="Enter your full name">
+                                </div>
+                                <div class="col-12 col-md-6 mb-3">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="email"
+                                        placeholder="Enter your email address">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-6 mb-3">
+                                    <label for="destination" class="form-label">Select Destination</label>
+                                    <select name="" id="destination" class="form-select">
+                                        <option value="">Select Destination</option>
+                                        <option value="">Goa</option>
+                                        <option value="">Manali</option>
+                                        <option value="">Darjeeling</option>
+                                        <option value="">Kerala</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-md-6 mb-3">
+                                    <label for="travelDate" class="form-label">Travel Date</label>
+                                    <input type="date" class="form-control" id="travelDate">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="numberOfPeople" class="form-label">Number of People</label>
+                                    <input type="number" class="form-control" id="numberOfPeople" placeholder="Enter number of people">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message/Requirement</label>
+                                    <textarea class="form-control" id="message" rows="3" placeholder="Enter your message or requirements"></textarea>
+                                </div>
+                                <button class="btn btn-success w-100">Send Request</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer class="bg-dark text-white text-center py-3">
         <p class="mb-0">&copy; 2026 Chale Chalo Travel App | Designed with Bootstrap</p>

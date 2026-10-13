@@ -1,0 +1,93 @@
+/* Navbar Link Hover Effect */
+.nav-link-custom {
+    color: #333 !important;
+    position: relative;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin: 0 15px;
+}
+
+.nav-link-custom:hover {
+    color: #ff6600 !important;
+}
+
+.nav-link-custom.active {
+    color: #ff6600 !important;
+}
+
+.nav-link-custom::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ff6600;
+    transition: width 0.3s ease;
+}
+
+.nav-link-custom:hover::after,
+.nav-link-custom.active::after {
+    width: 100%;
+}
+
+/* Plan Trip Button */
+.plan-trip-btn {
+    background-color: #ff6600 !important;
+    border-color: #ff6600 !important;
+    color: white !important;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+
+.plan-trip-btn:hover {
+    background-color: #e65c00 !important;
+    border-color: #e65c00 !important;
+    color: white !important;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-title {
+    color: white;
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.hero-text {
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
